@@ -1,5 +1,12 @@
+var win = window,
+    doc = document,
+    docElem = doc.documentElement,
+    body = doc.getElementsByTagName('body')[0],
+    windowX = win.innerWidth || docElem.clientWidth || body.clientWidth,
+    windowY = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
+
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowX, windowY);
 }
 
 function draw() {
